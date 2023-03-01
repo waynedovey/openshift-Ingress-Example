@@ -31,7 +31,14 @@ Create the Ingress Object from command line
 
 Test the Ingress object and the App
 
+```
 oc get Ingress
-oc get route 
+```
 
+```
+oc get route 
+```
+
+```
 curl ${FQDN}
+```
