@@ -7,10 +7,12 @@ metadata:
 spec:
   tls:
    - hosts:
-     - tektutor.apps.zc3qm59u.eastus.aroapp.io
+     #- tektutor.apps.zc3qm59u.eastus.aroapp.io
+     - ${FQDN}
      secretName: testsecret-tls
   rules:
-   - host: tektutor.apps.zc3qm59u.eastus.aroapp.io
+   #- host: tektutor.apps.zc3qm59u.eastus.aroapp.io
+   - host: ${FQDN}
      http:
        paths:
          #- path: /welcome

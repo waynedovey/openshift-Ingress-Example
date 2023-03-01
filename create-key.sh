@@ -5,8 +5,8 @@ openssl req -x509 \
   -days 365 \
   -key ca.key \
   -out ca.crt \
-  -subj "/CN=tektutor.apps.zc3qm59u.eastus.aroapp.io"
-
+  #-subj "/CN=tektutor.apps.zc3qm59u.eastus.aroapp.io"
+  -subj "/CN=${FQDN}"
 
 oc create secret tls testsecret-tls \
 --key ca.key \
