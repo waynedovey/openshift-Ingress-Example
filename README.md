@@ -12,14 +12,14 @@ Access to a working OpenShift Cluster
 
 Create the Project and Deploy the example App
 
-# Note: I have left a working example in the comments, paying attention to the domain name structure
+### Note: I have left a working example in the comments, paying attention to the domain name structure
 
 ```
 ./create-project.sh
 ```
 Generate SSL Certificate and OpenShift Secret by running the following Command
 
-# Note: Update the Domain, and host entry under ${FQDN}
+### Note: Update the Domain, and host entry under ${FQDN}
 
 ```
 ./create-key.sh
@@ -27,7 +27,7 @@ Generate SSL Certificate and OpenShift Secret by running the following Command
 
 Create the Ingress Object from command line
 
-# Note: Update the Domain, and host entry under ${FQDN}
+### Note: Update the Domain, and host entry under ${FQDN}
 
 Test the Ingress object and the App
 
