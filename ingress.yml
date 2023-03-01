@@ -6,7 +6,8 @@ metadata:
    haproxy.router.openshift.io/rewrite-target: / 
 spec:
  rules:
-   - host: tektutor.apps.singapore-cluster.sandbox216.opentlc.com
+   #- host: tektutor.apps.singapore-cluster.sandbox216.opentlc.com
+   - host: ${FQDN}
      http:
        paths:
          #- path: /welcome
